@@ -8,8 +8,25 @@
       </p></div>
       <div class="any3" style="height: 200px;width: 200px;background-color: red;" id="box">World</div>
       <div class="any2">By</div>
+      <video src="#"></video>
       <div class="any1">JS</div>
       <c-dd>Hi</c-dd>
+      <div id="host"></div>
+      <!-- showdom for server side rendered applications -->
+       <div id="serverhost">
+        <!-- allways add insde a host. if you add directly to root i will consider its parent as host and override other contents -->
+        <!-- template used to create hidden element on the dom -->
+        <template shadowrootmode="closed"> 
+          <style>
+          div {
+            color: red;
+            border: 2px dotted black;
+            display: inline;
+          }
+        </style>
+        <div class="red">Server side shadow</div>
+       </template>
+       </div>
     </div>
     <!-- <script src="./flatten.js"></script> -->
     <!-- <script src="./deepClone.js"></script> -->
