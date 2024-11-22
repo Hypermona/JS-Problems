@@ -24,6 +24,7 @@ window.addEventListener("click", (e) => {
     value: `User clicked ${x} and ${y} coordinates `,
   });
 });
+
 window.addEventListener("unload", (e) => {
   logEvent(
     {

@@ -1,3 +1,24 @@
 .red {
   color: red;
 }
+
+.event,
+.child1,
+.child2 {
+  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.event {
+  height: 200px;
+  width: 200px;
+}
+.child1 {
+  height: 100px;
+  width: 100px;
+}
+.child2 {
+  height: 50px;
+  width: 50px;
+}

@@ -1,5 +1,7 @@
 // create a deepClone function;
 
+// imp: if you use ... (spread operator to copy it will become shallow copy it will not clone netsted objects or array)
+
 function deepClone(obj) {
   let res = undefined;
   if (typeof obj === "object") {

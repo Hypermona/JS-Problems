@@ -1,7 +1,7 @@
 //Q flatten a given array
 // [1,2,[[3,4,[4,5,[5]]],[7,9,[10]]]]
 
-// with 2 functions
+// ok ok
 function flatten(arr) {
   let res = [];
   function flat(ele) {
@@ -17,6 +17,7 @@ function flatten(arr) {
   return res;
 }
 
+// good
 function flatten2(arr) {
   let res = [];
   if (!Array.isArray(arr)) {

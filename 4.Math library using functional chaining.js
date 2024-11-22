@@ -1,6 +1,7 @@
 function Math() {
   this.sum = 0;
   this.add = (v) => {
+    // also we can use ...args and array.reduce
     this.sum += v;
     return this;
   };

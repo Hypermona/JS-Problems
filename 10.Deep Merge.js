@@ -27,9 +27,9 @@ const obj2 = {
 };
 
 function deepMerge(baseObj, overrideObj) {
-  //1.loo both the objects compare.
+  //1.loop both the objects compare.
   //2.if they are not same, then check the type of base object and override object
-  //3.if both are object then agaig call self.
+  //3.if both are object then again call self.
   //4.if property of override object not present in base then add it.
   //5.if property of base object not present in override then just continue.
 
