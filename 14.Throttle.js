@@ -1,17 +1,19 @@
 function useThrottle(fn, delay) {
+  // return a trottled function
   let prevTimeoutId = null;
   let prevTime = null;
   return function (...args) {
+    // for the 1st request exacute the function and set time = current time.
+    // for the subsequesnt request if it has time then call a setTimeOut by subtracting the passed time from delay and set time to current time.
+    // before that clear any existing timeouts
     if (!prevTime) {
       fn(...args);
       prevTime = Date.now();
     } else {
-      if (prevTimeoutId) {
-        clearTimeout(prevTimeoutId);
-      }
+      clearTimeout(prevTimeoutId);
       prevTimeoutId = setTimeout(() => {
         fn(...args);
-        prevTime = 0;
+        prevTime = Date.now();
       }, delay - (Date.now() - prevTime));
     }
   };
